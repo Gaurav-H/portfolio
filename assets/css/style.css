@@ -237,7 +237,7 @@ h6 {
 
 /*--------------------------------------------------------------
 # Hero Section
---------------------------------------------------------------*/
+-/*-------------------------------------------------------------*/
 /* CSS for desktop/large screens */
 #hero {
   width: 100%;
@@ -262,6 +262,7 @@ h6 {
   position: relative;
   z-index: 2;
   min-width: 300px;
+  text-align: center; /* Center-align text and button */
 }
 
 #hero h1 {
@@ -274,7 +275,7 @@ h6 {
 
 #hero p {
   color: #fff;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
 }
@@ -286,6 +287,23 @@ h6 {
   border-bottom: 3px solid #149ddd;
 }
 
+.custom-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #149ddd;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: #0d8bd1;
+}
+
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
@@ -295,7 +313,7 @@ h6 {
 @media (max-width: 768px) {
   /* CSS for mobile screens */
   #hero {
-    background: url("../img/backgmm.svg") top center;
+    background: url("../img/backgm.svg") top center;
     background-size: cover;
   }
 
@@ -310,7 +328,13 @@ h6 {
 
   #hero p {
     font-size: 18px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+  }
+
+  .custom-button {
+    padding: 8px 16px;
+    font-size: 16px;
+	border-radius: 50px;
   }
 }
 
