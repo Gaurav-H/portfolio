@@ -313,7 +313,7 @@ h6 {
 @media (max-width: 768px) {
   /* CSS for mobile screens */
   #hero {
-    background: url("../img/backgm.svg") top center;
+    background: url("../img/backgmm.svg") top center;
     background-size: cover;
   }
 
